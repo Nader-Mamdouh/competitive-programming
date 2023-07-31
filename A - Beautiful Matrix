@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int s, x;
+	int arr[5][5];
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			cin >> arr[i][j];
+			
+		}
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 5; j++)
+		{
+			if (arr[i][j] == 1) {
+				s = i; x = j;
+			}
+				
+ 
+		}
+	}
+	cout << abs(2- s) + abs(2- x);
+	return 0;
+}
