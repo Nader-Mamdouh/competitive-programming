@@ -1,0 +1,23 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <iomanip> 
+using namespace std;
+int main()
+{
+    long long price, coin;
+    cin >> price >> coin;
+    int counter = 0, result = 0;
+    while (true)
+    {
+        counter++;
+        result = price * counter;
+        if (result % 10 == 0 || result % 10 == coin)
+        {
+            break;
+        }
+    }
+    cout << counter << endl;
+    return 0;
+}
