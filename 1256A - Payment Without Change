@@ -1,0 +1,46 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <iomanip> 
+using namespace std;
+int main()
+{
+    long long t;
+    cin >> t;
+    while (t--)
+    {
+       
+        long long a, b, n, s;
+        cin >> a >> b >> n >> s;
+        long long o = s / n;
+        long long h = o *n;
+        long long j = a * n;
+      //cout << o << "///////" << h << endl;
+        if (o <= a)
+        {
+            if (b>=(s - h))
+            {
+                cout << "YES"<< endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+        }
+        else
+        {
+            if (j + b >= s)
+            {
+                cout << "YES" << endl;
+            }
+            else
+            {
+                cout << "NO" << endl;
+            }
+           
+        }
+       
+    }
+    return 0;
+}
