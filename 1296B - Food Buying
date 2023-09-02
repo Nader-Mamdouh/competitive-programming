@@ -1,0 +1,29 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <cmath>
+#include <iomanip> 
+using namespace std;
+int main()
+{
+    long long t;
+    cin >> t;
+    while (t--)
+    {
+        long long d, s, p, ans = 0;
+        cin >> s;
+        while (1) {
+            d = (s / 10) * 10;
+            ans += d;
+            p = s - d;
+            s = (s / 10) + p;
+            if (s < 10) {
+                ans += s;
+                break;
+            }
+        }
+        cout << ans << endl;
+
+    }
+    return 0;
+}
